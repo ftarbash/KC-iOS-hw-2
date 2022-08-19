@@ -94,9 +94,14 @@ struct ContentView_Previews: PreviewProvider {
             HStack{
                 Text(title).font(.system(size: 23, weight: .medium)).foregroundColor(Color.black)
                 
+                HStack{
                 Text(name).font(.system(size: 23, weight: .medium)).foregroundColor(Color.black)
+               Text("KD").font(.system(size: 23, weight: .medium)).foregroundColor(Color.black) }
+                    
                 Stepper("Tawook Protein Pack", value: $num, in: 0...100).labelsHidden()
-                Text("\(num)")
+                    Text("\(num)")
+                    
+                
                 
         }.frame(width: 380, height: 85).background(.white.opacity(0.6)).cornerRadius(15)
         }
